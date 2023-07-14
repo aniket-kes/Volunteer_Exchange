@@ -44,7 +44,7 @@ Array.prototype.forEach.call(counterNum,function (currentValue) {
     }
     count();
     
-/*
+
     function timer()
     {
         if(i<10)
@@ -56,7 +56,7 @@ Array.prototype.forEach.call(counterNum,function (currentValue) {
         }
        
     }
-    timer();*/
+    timer();
 }
 );
 
