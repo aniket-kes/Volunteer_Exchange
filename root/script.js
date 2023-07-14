@@ -5,7 +5,7 @@ var slides = ['img1.jpg', 'img2.jpg','img3.jpg','img4.jpg'];
 var Start=0;
 
 function slider(){
-    if(Start<slides.length){
+    if(Start<slides.length){ 
         Start=Start+1;
     }
     else{
