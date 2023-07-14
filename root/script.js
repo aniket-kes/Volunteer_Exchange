@@ -44,19 +44,6 @@ Array.prototype.forEach.call(counterNum,function (currentValue) {
     }
     count();
     
-
-    function timer()
-    {
-        if(i<10)
-        {
-        currentValue.innerText=i;
-        console.log(currentValue.innerText);
-        i++;
-        const myTimeout=setTimeout(timer, 100);
-        }
-       
-    }
-    timer();
 }
 );
 
