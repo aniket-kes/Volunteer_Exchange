@@ -78,6 +78,7 @@ navbar button{
     font-size: 14px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
+    margin:30px 0; 
 }
   
 .btn-1:hover {
@@ -153,6 +154,11 @@ section .box{
 .event-card{
     display: flex;
     justify-content: space-evenly;
+}
+
+.card-allign{
+    display :inline-block;
+    margin: 40px;
 }
 
 
