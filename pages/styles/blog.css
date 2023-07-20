@@ -1,1 +1,131 @@
 
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.blogDiv{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 100px; 
+}
+
+.blogTitle{
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* part 1 */
+
+.part{
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.content{
+    display: flex;
+    background-color: #D2DAFF;
+    transition-timing-function: ease-out;
+    transition: 0.5s; 
+}
+
+.img-prop1{
+    margin: 30px 10px 30px 30px;
+    height: 350px;
+    width: 600px;
+    object-fit: cover;
+    transition: background 0.5s, transform 0.5s;
+    border-radius: 10px;
+}
+
+/* part 2 */
+
+
+  .img-prop2{
+    margin: 30px 30px 30px 10px;
+    height: 350px;
+    width: 600px;
+    object-fit: cover;
+    transition: background 0.5s, transform 0.5s;
+    border-radius: 10px;
+  }
+
+  /* hover */
+
+  .img-prop2:hover{
+     transform: translateY(-5px);
+  }
+
+  .img-prop1:hover{
+    transform: translateY(-5px);
+ }
+
+ .part:hover{
+    transform: translateY(-5px);
+    background-color: azure;
+ }
+
+ .content:hover{
+    transform: translate3d(10);
+    background-color: #A076F9;
+ }
+
+
+
+/* part 5 */
+.blank{
+    width: 100%;
+    height: 20px;
+    background-color: white;
+}
+
+
+/* media query */
+
+@media only screen and (max-width: 800px){
+ 
+    .content{
+        display: block;
+        background-color: #D2DAFF;
+    }
+
+    .part{
+        margin: 10px;
+        padding: 10px;
+        width: 90%;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .img-prop1, .img-prop2{
+        width: 90%;
+        display: flex;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+    }
+
+    .part h1{
+        font-size: large;
+    }
+
+    .part p{
+        font-size: large;
+    }
+}
