@@ -5,15 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event_page</title>
     <!-- link css file -->
-    <link rel="stylesheet" href="./script.css">
+    <link rel="stylesheet" href="../styles/event.css">
+    <!-- <link rel="stylesheet" href="../../component/navbar.css"> -->
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+    <script> 
+      $(function(){
+        $("#navbar").load("../../component/navbar.html"); 
+        // $("#footer").load("footer.html"); 
+      });
+    </script> 
 </head>
 
 <body>  
+    <div id="navbar"></div>
         <!-- header section start -->   
-        <header class="header">
+        <!-- <header class="header">
             <a href="#" class="logo"><i class="fa-solid fa-house"></i> ENGO.</a>
             
             <nav class="navbar">
@@ -27,7 +39,9 @@
             </nav>
     
             <div id="menu-btn" class="fas fa-bars"></div>
-        </header>
+        </header> -->
+
+        
      
         <!-- header section end -->
 

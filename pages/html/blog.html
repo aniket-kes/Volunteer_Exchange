@@ -2,14 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/blog.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+    <script> 
+      $(function(){
+        $("#navbar").load("../../component/navbar.html"); 
+        // $("#footer").load("footer.html"); 
+      });
+    </script> 
 </head>
 <body>
+    <div id="navbar"></div>
+
     <div class="blogDiv">
         <span class="blogTitle">ARTICLES</span>
     </div>

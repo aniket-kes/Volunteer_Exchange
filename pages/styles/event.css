@@ -24,11 +24,15 @@
 }
 
 html{
-    font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
+#navbar{
+    font-size: 100% !important;
+}
+
 
 section{
     padding: 2rem 9%;
@@ -83,7 +87,7 @@ section:nth-child(even){
 }
 
 /* header section */
-.header{
+/* .header{
     padding: 2rem 9%;
     position: fixed;
     top: 0; left:0; right:0;
@@ -116,7 +120,7 @@ section:nth-child(even){
     color: var(--black);
     padding: 1rem 1.5rem;
     cursor: pointer;
-}
+} */
 /* header section end */
 
 
