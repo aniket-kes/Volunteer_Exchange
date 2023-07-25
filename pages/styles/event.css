@@ -23,12 +23,12 @@
     text-decoration: none;
 }
 
-html{
+/*html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
-}
+}*/
 
 section{
     padding: 2rem 9%;
