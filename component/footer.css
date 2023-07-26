@@ -45,7 +45,7 @@ ul {
     margin-bottom: 30px;
   }
   .footer-logo img {
-    max-width: 200px;
+    max-width: 90px;
   }
   .footer-text p {
     margin-bottom: 14px;
@@ -105,13 +105,13 @@ ul {
     display: inline-block;
     float: left;
     width: 50%;
-    margin-bottom: 12px;
+    margin-bottom: 12px !important;
   }
   .footer-widget ul li a:hover {
     color: #A076F9;
   }
   .footer-widget ul li a {
-    color: #878787;
+    color: #878787 !important;
     text-transform: capitalize;
   }
   .subscribe-form {
@@ -159,5 +159,16 @@ ul {
   }
   .footer-menu li a {
     font-size: 14px;
-    color: #878787;
+    color: #878787 !important;
   }
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}

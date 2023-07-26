@@ -23,19 +23,17 @@
     text-decoration: none;
 }
 
-html{
+/*html{
+    font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
-    font-size: 62.5%;
-}
-#navbar{
-    font-size: 100% !important;
-}
-
+}*/
 
 section{
     padding: 2rem 9%;
+    font-size: 62.5%;
+    scroll-padding-top: 7rem;
 }
 
 section:nth-child(even){
@@ -50,6 +48,7 @@ section:nth-child(even){
     color: var(--black);
     font-size: 5rem;
     letter-spacing: .4rem;
+    
 }
 
 .heading span{
@@ -75,6 +74,7 @@ section:nth-child(even){
     cursor: pointer;
     font-size: 1rem;
     background: #fff;
+  
 }
 
 .btn:hover{
@@ -87,7 +87,7 @@ section:nth-child(even){
 }
 
 /* header section */
-/* .header{
+.header{
     padding: 2rem 9%;
     position: fixed;
     top: 0; left:0; right:0;
@@ -97,6 +97,7 @@ section:nth-child(even){
     align-items: center;
     justify-content: space-between;
     background: var(--light-color);
+    
 }
 .header .logo{
     font-size: 2.5rem;
@@ -120,7 +121,7 @@ section:nth-child(even){
     color: var(--black);
     padding: 1rem 1.5rem;
     cursor: pointer;
-} */
+}
 /* header section end */
 
 
@@ -129,6 +130,7 @@ section:nth-child(even){
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:2rem;
+    
 }
 
 .event .box-container .box{ 
@@ -166,7 +168,6 @@ section:nth-child(even){
     font-size: 5rem;
     padding-top: 4rem;
 }
-
 
 /* event section end */
 

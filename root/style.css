@@ -9,15 +9,16 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-a{
+/* a{
     color: inherit !important;
     text-decoration: none !important;
-}
+} */
 
 .reveal{
-    position: relative;
+    position:relative;
     transform: translateY(150px);
     opacity: 0;
     transition: 1s all ease;
@@ -27,6 +28,8 @@ a{
     transform: translateY(0);
     opacity: 1;
 }
+
+/*
 header{
     width: 100vw;
     background-color: #EEF1FF;
@@ -36,7 +39,6 @@ navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-top: 12px; */
     padding: 4px;
     width: 80vw;
     margin: 0 auto;
@@ -82,13 +84,12 @@ navbar ul li{
     transform-origin: bottom left;
     color: rgb(41, 41, 41) !important;
     text-decoration: none !important;
-}
+} */
 
-navbar{
+/* navbar{
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
-    /* margin-top: 12px; */
     padding: 4px !important;
     background-color: #EEF1FF !important;
 }
@@ -101,17 +102,17 @@ navbar img{
 navbar ul{
     display: flex !important;
     margin-bottom: 0 !important;
-}
+} */
 
-li{
-    /* cursor: pointer !important; */
+/* li{
+    cursor: pointer !important; this should be commented
     margin: 0 12px !important;
     padding: 0 2px !important;
     text-decoration: none !important;
     list-style: none !important;
-}
+} */
 
-.hover-underline-animation {
+/* .hover-underline-animation {
     display: inline-block !important;
     position: relative !important;
 }
@@ -147,14 +148,14 @@ navbar .toggle_btn{
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
-}
+} */
 
-.dropdown_menu{
+/* .dropdown_menu{
     position: absolute;
     right: 2rem;
     display: flex;
     flex-direction: column;
-    /* margin: 2rem 0; */
+    margin: 2rem 0; this should be commented
     height: 0;
     width: 300px;
     background: rgba(255, 255, 255, 0.1);
@@ -167,9 +168,9 @@ navbar .toggle_btn{
 
 .dropdown_menu.open{
     height: 240px;
-}
+} */
 
-.dropdown_menu li{
+/* .dropdown_menu li{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -184,10 +185,10 @@ navbar .toggle_btn{
     margin-left: auto;
     display: block !important;
     margin: 12px auto !important;
-}
+} */
 
 
-.btn-1 {
+/* .btn-1 {
     cursor: pointer;
     background: #B1B2FF;
     -webkit-border-radius: 20;
@@ -205,7 +206,7 @@ navbar .toggle_btn{
     background: #7373af;
     
     text-decoration: none;
-}
+} */
 
 
 /* Image Auto Scroller */
@@ -324,6 +325,64 @@ section .box{
     box-shadow: rgba(110, 110, 175, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
+.card_img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+.card_body{
+  flex:1 1 auto;
+  align-items: center;
+  justify-content: center;
+ 
+  max-width: 400px;
+  margin: 0px auto;
+  background-color: #EEF1FF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition-duration: 0.5s;
+  position: relative;
+  height: 350px;
+     
+    
+}
+
+.card_body:hover{
+    transform: scale(1.07);
+    z-index: 100;
+    box-shadow: 0 0px 2px 0px;
+    border-radius: 15px;
+}
+
+.card_title{
+  margin: 1rem 0;
+}
+.btn_mod{
+    display: block;
+    width: 90%;
+    text-align: center;
+    padding: 12px 0;
+    background-color:#AAC4FF !important;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.btn_mod:hover{
+  background-color: #B1B2FF;
+}
+
+.posn{
+  margin-left: 5%;
+}
 
 /* Click to action button*/
 .parallax-section {
@@ -386,7 +445,7 @@ section .box{
 }
 .parallax-section .theme-btn {
     margin: 0px 12px;
-    color: rgba(255,255,255,0.80);
+    color: rgba(255,255,255,0.80) !important;
 }
 .light-btn {
     position: relative;
@@ -563,7 +622,9 @@ section h1:after {
 /* Article card section */
 .cards {
     width: 80%;
-    margin: 100px auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:50px;
     display: flex;
     /* flex-wrap: wrap; */
     display: -webkit-flex;
@@ -704,6 +765,28 @@ border-bottom-right-radius: 12px;
 
 .card:hover .card__info-hover {
     opacity: 1;
+}
+
+.article-btn{
+    width: 100%;
+    margin-top: -60px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.article-btn button{
+    border: none;
+    background: transparent;
+    padding: 10px 20px;
+    background-color: #B1B2FF;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-family: auto;
+    font-size: 1.1rem;
+}
+.article-btn button:hover{
+    scale: 0.95;
 }
 
 

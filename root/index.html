@@ -23,18 +23,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <title>Volunteer's Exchange</title>
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous">
-    </script>
-    <script> 
-      $(function(){
-        $("#navbar").load("../component/navbar.html"); 
-        $("#bottom-footer").load("../component/footer.html"); 
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#navbar").load("../component/navbar.html");
+        $("#bottom-footer").load("../component/footer.html");
       });
-    </script> 
+    </script>
   </head>
   <body>
     <!-- Navbar -->
@@ -68,7 +69,6 @@
       </div>
     </header> -->
     <div id="navbar"></div>
-    <!-- <iframe src="../component/navbar.html"></iframe> -->
     <!-- Image section Auto Scroll -->
     <section class="slider">
       <div id="img">
@@ -94,7 +94,7 @@
     </section>
 
     <!-- Take Action where all the events will be there -->
-    <section class="event">
+    <section class="event reveal">
       <h1 class="article-heading event-heading">TAKE ACTION!</h1>
 
       <div class="search">
@@ -158,58 +158,84 @@
         </div>
       </div>
 
-      <div class="event-card card-allign">
-        <div class="card" style="width: 18rem">
-          <img class="card-img-top" src="..." alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="reveal">
+        <div class="event-card card-allign">
+          <div class="card1" style="width: 18rem">
+            <div class="card_body">
+              <img
+                class="card_img"
+                srcset="
+                  https://images.ctfassets.net/81iqaqpfd8fy/mXkYvcy4sSJNttsndqerw/79604176f480b27477a85ed33cb0a0fd/RoadToSelfCare_MicrositeHeader.png?f=center&fit=fill&fm=webp&h=205&w=365
+                "
+                alt="Card-image-cap"
+              />
+              <h5 class="card_title posn">Road to Self-Care</h5>
+              <p class="card-text posn">
+                Share a mental health checklist to keep your friends calm and
+                safe on the road.
+              </p>
+              <a href="#" class="btn btn_mod">Get Started</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="event-card card-allign">
-        <div class="card" style="width: 18rem">
-          <img class="card-img-top" src="assets/img1.jpg" alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="event-card card-allign">
+          <div class="card1" style="width: 18rem">
+            <div class="card_body">
+              <img
+                class="card_img"
+                srcset="
+                  https://images.ctfassets.net/81iqaqpfd8fy/2XqiyLtkiKMT7NI5m2G3xg/7616742147eb9e9afdac47235541706f/LouderThanEver_Collection_Header_RedirectPage__1_.png?f=center&fit=fill&fm=webp&h=410&w=730
+                "
+                alt="Card-image-cap"
+              />
+              <h5 class="card_title posn">Louder Than Ever</h5>
+              <p class="card-text posn">
+                Participate in Pride Parades in your nearest cities and help the
+                LGBTQIA+ community to grow.
+              </p>
+              <a href="#" class="btn btn_mod">Get Started</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="event-card card-allign">
-        <div class="card" style="width: 18rem">
-          <img class="card-img-top" src="..." alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="event-card card-allign">
+          <div class="card1" style="width: 18rem">
+            <div class="card_body">
+              <img
+                class="card_img"
+                srcset="
+                  https://images.ctfassets.net/81iqaqpfd8fy/388JsXDQQLcXtPMBCK4gLc/a05562616cd8a51bb2edbad3e2fa8d3a/YasssGreen_Collection_Header_RedirectPage.png?f=center&fit=fill&fm=webp&h=410&w=730
+                "
+                alt="Card-image-cap"
+              />
+              <h5 class="card_title posn">Yass,Green!!</h5>
+              <p class="card-text posn">
+                Our Environmental program is designed to help you build
+                sustainable habits for your lifetime.
+              </p>
+              <a href="#" class="btn btn_mod">Get Started</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="event-card card-allign">
-        <div class="card" style="width: 18rem">
-          <img class="card-img-top" src="..." alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="event-card card-allign">
+          <div class="card1" style="width: 18rem">
+            <div class="card_body">
+              <img
+                class="card_img"
+                srcset="
+                  https://images.ctfassets.net/81iqaqpfd8fy/7MTHBGo7wqkjZhHo0evS5E/737930d6602389007aa91c07ae28a514/StrengthThroughService_Microsite_Header_TackleHunger.png?f=center&fit=fill&fm=webp&h=820&w=1460
+                "
+                alt="Card-image-cap"
+              />
+              <h5 class="card_title posn">Tackle Hunger</h5>
+              <p class="card-text posn">
+                Become a volunteer to collect and donate food items for your
+                local food bank.
+              </p>
+              <a href="#" class="btn btn_mod">Get Started</a>
+            </div>
           </div>
         </div>
       </div>
@@ -243,7 +269,7 @@
     </section>
 
     <!-- Article Section -->
-    <section class="">
+    <section class="reveal">
       <h1 class="article-heading">READ ABOUT IT!</h1>
       <div class="c-bloghero wf-section">
         <img
@@ -284,7 +310,7 @@
         </div>
       </div>
 
-      <section class="cards">
+      <section class="cards reveal">
         <article class="card card--1">
           <div class="card__info-hover">
             <svg class="card__like" viewBox="0 0 24 24">
@@ -330,8 +356,9 @@
               <svg class="card__clock" viewBox="0 0 24 24">
                 <path
                   d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z"
-                /></svg>
-                <span class="card__time">5 min</span>
+                />
+              </svg>
+              <span class="card__time">5 min</span>
             </div>
           </div>
           <div class="card__img"></div>
@@ -347,67 +374,72 @@
             >
           </div>
         </article>
-        
+
         <article class="card card--3">
-            <div class="card__info-hover">
-              <svg class="card__like" viewBox="0 0 24 24">
+          <div class="card__info-hover">
+            <svg class="card__like" viewBox="0 0 24 24">
+              <path
+                fill="#000000"
+                d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z"
+              />
+            </svg>
+            <div class="card__clock-info">
+              <svg class="card__clock" viewBox="0 0 24 24">
                 <path
-                  fill="#000000"
-                  d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z"
+                  d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z"
                 />
               </svg>
-              <div class="card__clock-info">
-                <svg class="card__clock" viewBox="0 0 24 24">
-                  <path
-                    d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z"
-                  /></svg>
-                  <span class="card__time">6 min</span>
-              </div>
+              <span class="card__time">6 min</span>
             </div>
-            <div class="card__img"></div>
-            <a href="#" class="card_link">
-              <div class="card__img--hover"></div>
-            </a>
-            <div class="card__info">
-              <span class="card__category"> Travel</span>
-              <h3 class="card__title">Discover the sea</h3>
-              <span class="card__by"
-                >by
-                <a href="#" class="card__author" title="author">John Doe</a></span
-              >
-            </div>
+          </div>
+          <div class="card__img"></div>
+          <a href="#" class="card_link">
+            <div class="card__img--hover"></div>
+          </a>
+          <div class="card__info">
+            <span class="card__category"> Travel</span>
+            <h3 class="card__title">Discover the sea</h3>
+            <span class="card__by"
+              >by
+              <a href="#" class="card__author" title="author">John Doe</a></span
+            >
+          </div>
         </article>
 
         <article class="card card--4">
-            <div class="card__info-hover">
-              <svg class="card__like" viewBox="0 0 24 24">
+          <div class="card__info-hover">
+            <svg class="card__like" viewBox="0 0 24 24">
+              <path
+                fill="#000000"
+                d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z"
+              />
+            </svg>
+            <div class="card__clock-info">
+              <svg class="card__clock" viewBox="0 0 24 24">
                 <path
-                  fill="#000000"
-                  d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z"
+                  d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z"
                 />
               </svg>
-              <div class="card__clock-info">
-                <svg class="card__clock" viewBox="0 0 24 24">
-                  <path
-                    d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z"
-                  /></svg>
-                  <span class="card__time">5 min</span>
-              </div>
+              <span class="card__time">5 min</span>
             </div>
-            <div class="card__img"></div>
-            <a href="#" class="card_link">
-              <div class="card__img--hover"></div>
-            </a>
-            <div class="card__info">
-              <span class="card__category"> Travel</span>
-              <h3 class="card__title">Discover the sea</h3>
-              <span class="card__by"
-                >by
-                <a href="#" class="card__author" title="author">John Doe</a></span
-              >
-            </div>
+          </div>
+          <div class="card__img"></div>
+          <a href="#" class="card_link">
+            <div class="card__img--hover"></div>
+          </a>
+          <div class="card__info">
+            <span class="card__category"> Travel</span>
+            <h3 class="card__title">Discover the sea</h3>
+            <span class="card__by"
+              >by
+              <a href="#" class="card__author" title="author">John Doe</a></span
+            >
+          </div>
         </article>
       </section>
+      <div class="article-btn">
+        <button class="btn-1">See more articles</button>
+      </div>
     </section>
 
     <!-- Ghatol -->

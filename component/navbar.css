@@ -3,6 +3,11 @@ header{
     background-color: #EEF1FF;
 }
 
+a{
+    color: initial !important;
+    text-decoration: none !important;
+}
+
 navbar{
     display: flex;
     justify-content: space-between;
@@ -75,12 +80,21 @@ navbar ul{
     margin-bottom: 0 !important;
 }
 
-li{
+navbar ul li{
     /* cursor: pointer !important; */
     margin: 0 12px !important;
     padding: 0 2px !important;
     text-decoration: none !important;
     list-style: none !important;
+}
+
+navbar ul li a{
+    text-decoration: none !important;
+    color: inherit;
+}
+
+navbar ul li a:hover{
+    color: inherit;
 }
 
 .hover-underline-animation {
@@ -111,7 +125,7 @@ navbar button{
     margin-right:15px;
     padding: 10px;
     border: none;
-
+    color: inherit !important;
 }
 
 navbar .toggle_btn{
@@ -124,7 +138,7 @@ navbar .toggle_btn{
 .dropdown_menu{
     position: absolute;
     right: 2rem;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     /* margin: 2rem 0; */
     height: 0;
@@ -138,7 +152,7 @@ navbar .toggle_btn{
 }
 
 .dropdown_menu.open{
-    height: 240px;
+    height: 45%;
 }
 
 .dropdown_menu li{
@@ -159,24 +173,36 @@ navbar .toggle_btn{
 }
 
 
-.btn-1 {
+header .btn-1 {
     cursor: pointer;
     background: #B1B2FF;
     -webkit-border-radius: 20;
     -moz-border-radius: 20;
     border-radius: 20px;
     font-family: Georgia;
-    color: #000000;
+    color: #000000 !important;
     font-size: 14px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     margin:30px 0; 
 }
   
-.btn-1:hover {
+header .btn-1:hover {
     background: #7373af;
     
     text-decoration: none;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 @media only screen and (max-width: 600px) {
