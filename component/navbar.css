@@ -1,6 +1,7 @@
 header{
     width: 100%;
-    background-color: #EEF1FF;
+    background: rgb(153,153,255);
+    background: linear-gradient(0deg, rgba(153,153,255,1) 0%, rgba(102,0,204,1) 53%);
 }
 
 a{
@@ -67,7 +68,7 @@ navbar{
     align-items: center !important;
     /* margin-top: 12px; */
     padding: 4px !important;
-    background-color: #EEF1FF !important;
+/*     background-color: #EEF1FF !important; */
 }
 
 navbar img{
