@@ -236,8 +236,9 @@ img{
 section .box{
     width: 60%;
     height: 180px;
-    background: rgb(190,187,196);
-    background: linear-gradient(90deg, rgba(190,187,196,1) 0%, rgba(133,73,187,1) 52%);
+/*     background-color: #B1B2FF; */
+    background: rgb(184,184,255);
+    background: radial-gradient(circle, rgba(184,184,255,1) 0%, rgba(102,0,204,1) 100%);
     margin: -100px auto;
     z-index: 100;
     display: flex;
