@@ -1,1 +1,212 @@
-<!-- Pratham -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   
+    <link rel="stylesheet" href="../styles/reg.css">
+     
+   
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+    <script> 
+      $(function(){
+        $("#navbar").load("../../component/navbar.html"); 
+        $("#footer").load("../../component/footer.html"); 
+      });
+    </script> 
+
+   <title>NGO Regisration Form </title>
+</head>
+<body>
+    <div id="navbar"></div>
+    <section class="registration">
+        <div class="container">
+            <header>NGO Registration</header>
+
+            <form action="#">
+                <div class="form first">
+                    <div class="details personal">
+                        <span class="title">About Organisation</span>
+
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Organisation Name</label>
+                                <input type="text" placeholder="Ex: HelpAge India" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Date of Establishment</label>
+                                <input type="date" placeholder="Enter date" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Unique Registration Number</label>
+                                <input type="text" placeholder="Enter Regisration Number" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Official Website</label>
+                                <input type="text" placeholder="Ex: https://www.helpageindia.org/" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Impact Sector</label>
+                                <select required>
+                                    <option disabled selected>Select one</option>
+                                    <option>Education</option>
+                                    <option>Healthcare</option>
+                                    <option>Environment and Conservation</option>
+                                    <option>Women Empowerment</option>
+                                    <option>Children and Child Rights</option>
+                                    <option>Disaster Relief and Rehabilitation</option>
+                                    <option>Disability</option>
+                                    <option>Human Rights and Social Justice</option>
+                                    <option>HIV/AIDS and Health Awareness</option>
+                                    <option>Elderly Care</option>
+                                    <option>Animal Welfare</option>
+                                    <option>Other</option>
+
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Mission & Vision</label>
+                                <input type="text" placeholder="Describe your mission statement" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details ID">
+                        <span class="title">Contact Details</span>
+
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>First Name</label>
+                                <input type="text" placeholder="Ex: Anand" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Ex: Kumar" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Title in Organisation</label>
+                                <input type="text" placeholder="Ex: Executive Director" required>
+                            </div>
+
+                            
+                            <div class="input-field">
+                                <label>Date of Birth</label>
+                                <input type="date" placeholder="Enter date" required>
+                            </div>
+                        
+
+                            <div class="input-field">
+                                <label>Contact Number</label>
+                                <input type="number" placeholder="Enter the number" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Email Address</Address></label>
+                                <input type="text" placeholder="Ex: AnandKumar@ex-domain.com" required>
+                            </div>
+                            </div>
+
+
+                        <button class="nextBtn">
+                            <span class="btnText">Next</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div> 
+                </div>
+
+                <div class="form second">
+                    <div class="details address">
+                        <span class="title">Organisation location</span>
+
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Address Type</label>
+                                <input type="text" placeholder="Ex: Permanent or Temporary" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Street</label>
+                                <input type="text" placeholder="Ex: 42,munshi nagar" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>City</label>
+                                <input type="text" placeholder="EX: Mumbai" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>State</label>
+                                <input type="text" placeholder="Ex: Maharashtra" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Country</label>
+                                <input type="text" placeholder="Ex: India" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Postal Code</label>
+                                <input type="number" placeholder="Ex: 440008" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Other details">
+                        <span class="title">Other Details</span>
+
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Organisation Logo</label>
+                                <input type="file" placeholder="Select Logo" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Projects Done(If Any)</label>
+                                <input type="text" placeholder="Provide Website links" >
+                            </div>
+
+                            <div class="input-field">
+                                <label>Any Other Needs?</label>
+                                <input type="text" placeholder="Please describe your needs" >
+                            </div>
+                        </div>
+
+
+                            
+                        <div class="buttons">
+                            <div class="backBtn">
+                                <i class="uil uil-navigator"></i>
+                                <span class="btnText">Back</span>
+                            </div>
+                            
+                            <button class="sumbit">
+                                <span class="btnText">Submit</span>
+                                <i class="uil uil-navigator"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- <div id="footer"></div> -->
+    
+
+    <script src="../script/reg.js"></script>
+</body>
+</html>

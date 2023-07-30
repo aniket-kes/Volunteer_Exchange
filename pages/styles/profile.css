@@ -1,81 +1,147 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-  }
-  
-  .container {
-    height: 450px;
-    width: 300px;
-    box-shadow: 0 10px 20px black;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
-    font-family: 'Abel', sans-serif;
-  }
-  
-  .image {
-    height: 100px;
-    width: 100px;
-    background-image: url('https://xp.io/storage/15pewlWA.jpg');
-    background-size: cover;
-    border-radius: 50%;
-    border: 8px solid white;
-    position: relative;
-    top: 200px;
-    margin-left: 170px;
-    box-shadow: 0 2px 15px rgb(58, 54, 54);
-    transform: rotate(-20deg);
-  }
-  
-  .shape {
-    height: 250px;
-    width: 400px;
-    background-color: black;
-    margin-left: -20px;
-    position: relative;
-    top: -80px;
-    box-shadow: 0 2px 15px black;
-    transform: rotate(25deg);
-  }
-  
-  h3 {
-    margin-bottom: 10px;
+body{
+  padding:0;
+  margin:0;
     font-family: 'Montserrat', sans-serif;
-  }
-  
-  .title {
-    color: rgb(105, 100, 109);
-  }
-  
-  p {
-    padding-left: 30px;
-    padding-right: 30px;
-    color: rgb(105, 100, 109);
-  }
-  
-  .icons {
-    margin-top: 15px;
-  }
-  
-  .icons i {
-    margin-left: 10px;
-    font-size: 20px;
-    transition: 0.3s;
-    color: rgb(40, 163, 194);
-    ;
-  }
-  
-  .icons i:hover {
-    transform: scale(1.1);
-    color: rgb(18, 192, 235);
-  }
+   height:100vh;
+  background:#f1f2f6;
+  display:flex;
+  justify-content:center;
+}
+h1{
+  margin:10px 4px;
+}
+h3{
+  margin:4px;
+}
+p{
+  margin:4px;
+}
+a{
+  text-decoration:none;
+}
+li{
+  list-style-type:none;
+}
+.main{
+  max-width: 1000px;
+  width:100%;
+  /* height:aut; */
+  background: #fff;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start; 
+}
+.cover{
+/*   background:url(https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80); */
+  background:url(https://images.unsplash.com/photo-1576502200916-3808e07386a5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1346&q=80);
+  height:30%;
+  background-size:cover;
+}
+.user-pic{
+  width:20%;
+  border-radius:50%;
+  position:absolute;
+  top:20%;
+  left:15%;
+}
+.user-main-details{
+  position:absolute;
+  width:50%;
+  top:30%;
+  left:35%;
+  margin-left:2%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.stat-link{
+  color: #2f3542;
+}
+.btn{
+  padding:10px;
+  width: 20%;
+  background:#00c5dd;
+  border:none;
+  border-radius:10px;
+  color:#fff;
+  font-weight:600;
+  font-size:15px;
+}
+.user-complete-details{
+  position:absolute;
+  top:50%;
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  padding: 0 20px;
+}
+.user-meta-details{
+  width:25%;
+  display:flex;
+  flex-direction:column;
+}
+.user-all-data{
+  margin-left: 10px;
+  width:60%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-evenly;
+}
+.user-social{
+  border-left: 5px solid #00c5;
+  padding: 5px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.sm-link{
+  color: black;
+  margin:5px;
+  font-size:20px;
+}
+.user-techstack{
+  margin-top:40px;
+  border-left: 5px solid #00c5;
+  padding: 5px;
+}
+.tech-list{
+  display:flex;
+  flex-wrap:wrap;
+  margin:4px;
+  justify-content:flex-start;
+  padding:0;
+}
+.tech{
+  padding:5px;
+  background: #ffa283;
+  margin: 2px;
+  border-radius:5px;
+  color:white;
+  font-size: 15px;
+}
+
+.sign-out-wrapper {
+  margin-right: 1em;
+}
+
+.sign-out {
+  color: black;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.sign-out:focus,
+.sign-out:hover,
+.sign-out:active {
+  color: black;
+  background-color: grey;
+  text-decoration: none;
+}
+
+.sign-out > span {
+  margin: 0.1em;
+}

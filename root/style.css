@@ -11,6 +11,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+body{
+    /* background: #EEF1FF !important; */
+}
 
 /* a{
     color: inherit !important;
@@ -95,8 +98,7 @@ navbar ul li{
 }
 
 navbar img{
-    width: 120px !important;
-    height: 100px !important;
+    
 }
 
 navbar ul{
@@ -234,7 +236,8 @@ img{
 section .box{
     width: 60%;
     height: 180px;
-    background-color: #B1B2FF;
+    background: rgb(190,187,196);
+    background: linear-gradient(90deg, rgba(190,187,196,1) 0%, rgba(133,73,187,1) 52%);
     margin: -100px auto;
     z-index: 100;
     display: flex;
@@ -344,7 +347,7 @@ section .box{
   overflow: hidden;
   transition-duration: 0.5s;
   position: relative;
-  height: 350px;
+  height: 400px;
      
     
 }

@@ -1,0 +1,426 @@
+:root{
+    --white: white;
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --Anton: 'Anton';
+    --Lexend: 'Lexend', cursive;
+    --Livvic : 'Livvic', cursive;
+    --Josefin : 'Josefin', cursive;
+    --theme : rgb(255, 54, 88);
+    scroll-behavior: smooth;
+}
+/*-------------globalclass-----------------*/
+a{
+    text-decoration: none;
+    color:gray;
+}
+
+.flex-row{
+    display: flex ;
+    flex-direction: row ;
+    flex-wrap: wrap ;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+  /*  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+    font-size:2.5rem;
+}
+
+h3{
+   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+    font-size: 1.3rem;
+}
+
+.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+
+/*------x------globalclass--------x--------*/
+
+body{
+    margin: 0%;
+    box-sizing:border-box;
+    overflow-x: hidden;
+    background-color: #e7e7fe;
+}
+/*------------main content------------*/
+
+/*-------------site-title-------------*/
+main .site-title{
+    background-image: url("https://img.freepik.com/premium-vector/volunteers-cleaning-beach-collect-garbage-coast-cleaning-from-garbage-pollution-keep-environment-coast-by-volunteer-vector-illustration_102902-5964.jpg?w=2000");
+    background-size: cover;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+main .site-title .sit-background{
+padding-top: 1.5rem;
+text-align: center;
+color: black;
+}
+
+main .site-title .sit-background h3{
+   font-family: var(--Livvic);
+   font-size: 200%;
+}
+
+main .site-title .sit-background h3{
+  color:rgb(234, 28, 131);
+}
+
+main .site-title  h1,h3{
+    margin: 2rem;
+}
+
+main .site-title .btn{
+    margin:1.8rem;
+   background-color:transparent;
+   font-family:serif;
+   font-weight:bold;
+   font-weight: 550;
+   border: 2px solid rgb(234, 28, 131);
+   color: rgb(234, 28, 131);
+   margin-top: 35%;
+}
+
+main .site-title .btn:hover {
+    background-color: rgb(234, 28, 131);
+    border: 1px solid rgb(234, 28, 131);
+    color:black;
+   }
+   
+
+
+/*-------x-----site-title------x------*/
+
+              /*--------------Blog Carousel----------*/
+main .blog{
+ background-image: url("");
+ width:100%;
+ background-repeat: no-repeat;
+ background-position:center;
+ background-size: cover;
+ }
+main .blog h1{
+    text-shadow: 1px 3px 18px #7274dc;
+    color:#7274dc;
+    justify-content: center;
+    display: flex;
+    margin-bottom: -30px;
+}
+
+ main .blog .hello{
+    padding-top: 3rem;
+    height: 550px;
+ }
+
+main .hello .blog-content-1{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    width:27%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+    border-radius: 12px;
+}
+
+main .hello .blog-content-1 img{
+    border-radius: 12px;
+    height:280px;
+   
+}
+
+main .blog .hello .container{
+    display:flex;
+   justify-content: center;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+@media(max-width:819px){
+    main .blog .hello .container{
+        flex-direction: column;
+        
+        justify-content: center;
+        display: flex;
+    }
+}
+
+@media(max-width:819px){
+    main .blog .hello .container .blog-content-1{
+       width:80%;
+       height:40%;
+    }
+}
+
+main .blog .blog-content-1 .btn-blog{
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #121212;
+    background-color: #B1B2FF;
+    font-style:normal;
+    font-weight: 500;
+    font-variant: small-caps;
+  
+}
+
+main .blog .blog-content-1 .btn-blog:hover {
+color: white;
+transition-duration: 0.5s;
+transition-property:inherit;
+}
+
+
+
+
+              /*------x-------Blog Carousel----x-----*/
+/*----------------sitecontent---------------*/
+main .site-content{
+    display: grid;
+    grid-template-columns:70% 30%;
+}
+
+@media(max-width:819px){
+    main .site-content{
+        display: flex;
+        flex-direction: column;
+     }
+}
+
+@media(max-width:819px){
+    main .pagination{
+        visibility: hidden;
+     }
+}
+
+@media(max-width:819px){
+    main .site-content .posts .post-responsive{
+        margin-top: 280%;
+     }
+}
+
+main .post-info{
+    color: rgb(101, 100, 100);
+}
+
+main .post-content{
+    width:100%;
+}
+
+main .site-content .post-content >.post-image, .post-title{
+     padding: 1rem 2rem;
+     position:relative;
+     font-size: larger;
+}
+
+main .site-content .post-content .post-image{
+margin-top: 60px;
+}
+
+main .site-content .post-content .post-image .post-info{
+ background: var(--sky); 
+ padding: 1rem;
+ position: absolute;
+ bottom: 0%;
+ left:20vw;
+ border-radius: 3rem;
+}
+
+@media(max-width:819px){
+    main .site-content .posts .post-responsive .post-content .post-info{
+        border-radius: 0%;
+        bottom: 1.2rem;
+        left: 2rem;
+        height:8%;
+     }
+}
+
+main .site-content> .post-img> div{
+    overflow:hidden;
+}
+
+main .site-content .post-content .post-image .img{
+    width:100%;
+    transition:all 1s ease;
+}
+
+main .site-content .post-content .post-image .img:hover{
+transform:scale(1.1);
+}
+
+main .post-content .post-title a{
+    font-family:var(--Anton);
+     font-size: 1.5rem;
+     color: black;
+     font-weight:bold;
+}
+
+main .post-content .post-title p{
+    font-family: var(--Anton);
+}
+
+.site-content .post-content .post-title .post-btn{
+border-radius: 0;
+padding: .7rem 1.5rem;
+background: var(--sky);
+}
+
+@media(max-width:819px){
+    .popular-posts h1{
+       display: flex;
+       justify-content: center;
+    }
+}
+
+.site-content .pagination{
+    justify-content: center;
+    margin:2rem 0;
+}
+
+.site-content .pagination a{
+    padding:.6rem .9rem;
+    border-radius:2rem;
+    margin:0.3rem;
+    font-family:var(--Lexend);
+ }
+
+.site-content .pagination .pages{
+    background: rgb(213, 211, 211);
+    border: 1px #979799 solid;
+    border-radius: 50%;
+    color:#7274dc;
+}
+
+
+
+/*-------x--------sitecontent-------x-------*/
+
+/*-----------------sidebar-------------------*/
+.site-content .sidebar .category-list{
+font-family:var(--Livvic);
+}
+
+.sidebar .category{
+margin-top: 5rem;
+}
+
+.sidebar .category .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: -45px;
+}
+
+.site-content .sidebar .category-list .list-items{
+    background:var(--sky);
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+    border-radius: 3rem;
+    width:70%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.site-content .sidebar .category-list .list-items a{
+color: black;
+}
+
+.site-content .sidebar .popular-posts .post-content{
+padding: 1rem 0;
+margin-top: -60px;
+}
+
+.post-content .post-image img{
+   height: 10%;
+}
+
+.site-content .sidebar .popular-posts h2{
+    padding-top: 1rem;
+}
+
+.site-content .sidebar .popular-posts .post-image .post-info{
+    padding: .4rem .1rem ;
+    bottom: 0rem;
+    left: 1.5rem;
+    border-radius: 0rem;
+    background: #FFE6E6;
+}
+
+.site-content .sidebar .popular-posts h2{
+    margin-bottom: -25px;
+}
+
+.site-content .sidebar .newsletter{
+    padding-top: 0.5rem;
+}
+
+.site-content .sidebar .newsletter .form-element{
+    padding: 0.5rem 6rem;
+}
+
+.site-content .sidebar .newsletter .input-elements{
+width:80%;
+height:1.9rem;
+padding: 0.3rem 0.5rem;
+font-family: var(--Lexend);
+font-size: 1rem;
+}
+
+.site-content .sidebar .newsletter .form-btn{
+    border-radius: 0;
+    padding: 0.8rem 5rem;
+    margin: 1rem;
+    margin-left: -1px;
+    background: var(--sky);
+}
+
+@media(max-width:819px){
+    .popular-posts .post-content iframe{
+       margin-left: 5%;
+    }
+}
+
+@media(max-width:819px){
+    .form-element .btn{
+        width: 87%;
+    }
+}
+
+@media(max-width:819px){
+    .newsletter h3{
+        display: flex;
+        justify-content: center;
+        margin-bottom: -3px;
+    }
+}
+/*--------x-------sidebar--------x----------*/
+
+
+/*-----x------main content------x-----*/
+/*-------------responsive-------------*/
+@media(max-width:819px){
+    .container{
+        flex-direction:column;
+    }
+}
+
+
+
+/*------x------responsive-------x-----*/
